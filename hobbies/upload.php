@@ -41,7 +41,7 @@
     $ext = pathinfo($filename, PATHINFO_EXTENSION);
     echo $ext;
     echo $filename;
-    if(preg_match("/\.(json)$/", $filename))
+    if(preg_match($ext !== 'json'))
     {  
       echo "Your file must be in JSON format";
       header('Location: ./');

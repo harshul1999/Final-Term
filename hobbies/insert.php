@@ -63,11 +63,11 @@
   if ($stmt->errorCode() !== "00000") {
     // Add the error message to the errors session array
     error_log($stmt->errorInfo()[2] . "\n\n", 3, './error.log');
-    $_SESSION['errors'][] = "There was an error during registration.";
+    $_SESSION['errors'][] = "There was an error adding the hobby.";
     $_SESSION['form_values'] = $_POST;
   } else {
     // Add the success message to the successes session array
-    $_SESSION['successes'][] = "You have been registered successfully.";
+    $_SESSION['successes'][] = "Hobby was added successfully.";
     header('Location: ./');
     exit;
   }
