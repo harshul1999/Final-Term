@@ -39,9 +39,14 @@
   {
     $filename = $_FILES['data_file']['tmp_name'];
     $ext = pathinfo($filename, PATHINFO_EXTENSION);
-    if(preg_match($ext !== 'json'))
+    if(preg_match($ext === 'json'))
     {  
       echo "Your file must be in JSON format";
+      header('Location: ./');
+      exit;      
+    }
+    else 
+    {
       header('Location: ./');
       exit;      
     }
