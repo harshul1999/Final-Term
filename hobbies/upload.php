@@ -39,8 +39,6 @@
   {
     $filename = $_FILES['data_file']['tmp_name'];
     $ext = pathinfo($filename, PATHINFO_EXTENSION);
-    echo $ext;
-    echo $filename;
     if(preg_match($ext !== 'json'))
     {  
       echo "Your file must be in JSON format";
