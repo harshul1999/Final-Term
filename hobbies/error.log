@@ -1,0 +1,13 @@
+Exception: [14-04-2020 01:03:40][ERROR]: move_uploaded_file(./upload/data-example.json): failed to open stream: No such file or directory
+FILE: C:\wamp64\www\comp-1006\student-hobbies\hobbies\upload.php
+LINE: 59
+ in C:\wamp64\www\comp-1006\student-hobbies\hobbies\upload.php:29
+Stack trace:
+#0 [internal function]: {closure}(2, 'move_uploaded_f...', 'C:\\wamp64\\www\\c...', 59, Array)
+#1 C:\wamp64\www\comp-1006\student-hobbies\hobbies\upload.php(59): move_uploaded_file('C:\\wamp64\\tmp\\p...', './upload/data-e...')
+#2 {main}
+
+Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11 in C:\wamp64\www\comp-1006\student-hobbies\hobbies\upload.php:111
+Stack trace:
+#0 {main}
+
